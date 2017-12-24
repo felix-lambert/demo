@@ -18,6 +18,7 @@ const makeTree = (categories, parent) => {
   return node;
 };
 
+<<<<<<< HEAD
 // {
 //   "animals": {
 //     "mammals": {
@@ -32,4 +33,6 @@ const makeTree = (categories, parent) => {
 //     }
 //   }
 // }
+=======
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
 console.log(JSON.stringify(makeTree(animals, null), null, 2));

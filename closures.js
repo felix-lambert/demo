@@ -14,7 +14,11 @@ function greetMe() {
   console.log('Hello, ' + me + '!');
 }
 
+<<<<<<< HEAD
 greetMe(); // Hello, Bruce Wayne!
+=======
+greetMe();
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
 
 function makeAdder(x) {
   return y => x + y;
@@ -28,7 +32,11 @@ console.log(add10(2)); // 12
 
 function foo(x) {
   function bar(y) {
+<<<<<<< HEAD
     console.log(x + y); // 4
+=======
+    console.log(x + y);
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
   }
   bar(2);
 }
@@ -57,9 +65,18 @@ const counter = (() => {
 })();
 
 console.log('check closures with counter');
+<<<<<<< HEAD
 console.log(counter.value()); // 0
 counter.increment(); 
 counter.increment(); 
 console.log(counter.value()); // 2
 counter.decrement();
 console.log(counter.value()); // 1
+=======
+console.log(counter.value());
+counter.increment();
+counter.increment();
+console.log(counter.value());
+counter.decrement();
+console.log(counter.value());
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43

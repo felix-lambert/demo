@@ -12,7 +12,11 @@ const startValue = 2;
 const plusOne = inc(startValue); // 3
 const result = dbl(plusOne); // 6
 
+<<<<<<< HEAD
 console.log(result); // 6
+=======
+console.log(result);
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
 
 const newStartValue = 2;
 
@@ -22,7 +26,11 @@ const newStartValue = 2;
 // updated code would be:
 const res = dbl(inc(newStartValue)); // 6
 
+<<<<<<< HEAD
 console.log(res); // 6
+=======
+console.log(res);
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
 
 const _pipe = (f, g) => (...args) => g(f(...args));
 
@@ -39,7 +47,11 @@ const compose = (...fns) => fns.reduceRight(_pipe);
 const incThenDbl = pipe(inc, dbl);
 const rem = incThenDbl(2);
 
+<<<<<<< HEAD
 console.log(rem); // 6
+=======
+console.log(rem);
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
 
 const add = (a, b) => a + b;
 const dbled = num => num * 2;
@@ -47,13 +59,21 @@ const dbled = num => num * 2;
 const sumThenDbl = pipe(add, dbled);
 const resu = sumThenDbl(2, 1); // 6
 
+<<<<<<< HEAD
 console.log(resu); // 6
+=======
+console.log(resu);
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
 
 const square = n => n * n;
 const sumDblSquare = pipe(pipe(add, dbl), square);
 const resul = sumDblSquare(2, 1); // 36
 
+<<<<<<< HEAD
 console.log(resul); // 36
+=======
+console.log(resul);
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
 
 // I could nest calls to pipe indefinitely, and eventually I could build up a 
 // long pipeline, but the code is going to get harder and harder to follow. It 
@@ -62,7 +82,11 @@ console.log(resul); // 36
 const incDblSqr = pipe(inc, dbl, square);
 const relult = incDblSqr(2);
 
+<<<<<<< HEAD
 console.log(relult); // 36
+=======
+console.log(relult);
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
 
 // If you’d prefer to compose your functions from right to left, you can create a
 // compose function by using reduceRight instead of reduce. This will start with
@@ -70,4 +94,8 @@ console.log(relult); // 36
 const inDblSqr = compose(inc, dbl, square);
 const revult = inDblSqr(2);
 
+<<<<<<< HEAD
 console.log(revult); // 9
+=======
+console.log(revult);
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43

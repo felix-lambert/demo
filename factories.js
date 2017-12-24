@@ -4,7 +4,11 @@
 const dog = () => {
   const sound = 'woof';
   return {
+<<<<<<< HEAD
     talk: () => console.log(sound), // woof
+=======
+    talk: () => console.log(sound),
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
   };
 };
 

@@ -16,7 +16,11 @@ const promiseToCleanTheRoom = new Promise((resolve, reject) => {
 
 promiseToCleanTheRoom
   .then(fromResolve => {
+<<<<<<< HEAD
     console.log('the room is ' + fromResolve); // the room is clean
+=======
+    console.log('the room is ' + fromResolve);
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
   })
   .catch(fromReject => {
     console.log('the room is ' + fromReject);
@@ -30,7 +34,11 @@ const myPromise = new Promise(resolve => {
 
 myPromise
   .then(res => {
+<<<<<<< HEAD
     console.log(res); // Good to go!
+=======
+    console.log(res);
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
   })
   .catch(err => {
     console.log(err);
@@ -42,5 +50,9 @@ const myPromise2 = new Promise(resolve => {
   }, 1500);
 });
 
+<<<<<<< HEAD
 // [ 'Good to go!', 'Promise 2' ]
 Promise.all([myPromise, myPromise2]).then(data => console.log(data)); 
+=======
+Promise.all([myPromise, myPromise2]).then(data => console.log(data));
+>>>>>>> 607d3c9f0c3dba3f02facb70b9ae23187fd7cb43
